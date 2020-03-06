@@ -5,6 +5,12 @@ import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.Test;
 
 class PrimeNumberValidatorTest {
+	
+	@Test
+	void test1NotPrime() {
+		PrimeNumberValidator classUnderTest = new PrimeNumberValidator();
+		assertFalse(classUnderTest.isPrime(1));
+	}
 
 	@Test
 	void test2Prime() {
