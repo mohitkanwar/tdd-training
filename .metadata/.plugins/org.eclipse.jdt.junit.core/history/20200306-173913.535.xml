@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?><testrun name="PrimeNumberValidatorTest" project="PrimeNumberTestr" tests="3" started="3" failures="0" errors="0" ignored="0">
-  <testsuite name="com.xebia.training.prime.PrimeNumberValidatorTest" time="0.008" displayname="PrimeNumberValidatorTest" uniqueid="[engine:junit-jupiter]/[class:com.xebia.training.prime.PrimeNumberValidatorTest]">
-    <testcase name="test2Prime" classname="com.xebia.training.prime.PrimeNumberValidatorTest" time="0.001" displayname="test2Prime()" uniqueid="[engine:junit-jupiter]/[class:com.xebia.training.prime.PrimeNumberValidatorTest]/[method:test2Prime()]"/>
-    <testcase name="test3Prime" classname="com.xebia.training.prime.PrimeNumberValidatorTest" time="0.0" displayname="test3Prime()" uniqueid="[engine:junit-jupiter]/[class:com.xebia.training.prime.PrimeNumberValidatorTest]/[method:test3Prime()]"/>
-    <testcase name="test4NotPrime" classname="com.xebia.training.prime.PrimeNumberValidatorTest" time="0.007" displayname="test4NotPrime()" uniqueid="[engine:junit-jupiter]/[class:com.xebia.training.prime.PrimeNumberValidatorTest]/[method:test4NotPrime()]"/>
-  </testsuite>
-</testrun>

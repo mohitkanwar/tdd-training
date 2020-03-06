@@ -18,5 +18,10 @@ class PrimeNumberValidatorTest {
 		assertTrue(classUnderTest.isPrime(3));
 	}
 	
+	@Test
+	void test4NotPrime() {
+		PrimeNumberValidator classUnderTest = new PrimeNumberValidator();
+		assertFalse(classUnderTest.isPrime(4));
+	}
 
 }
