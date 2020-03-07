@@ -1,39 +1,53 @@
 package com.xebia.training.prime;
 
-import static org.junit.jupiter.api.Assertions.*;
 
-import org.junit.jupiter.api.Test;
-
-class PrimeNumberValidatorTest {
+public class PrimeNumberValidatorTest {
 	
-	@Test
+	private PrimeNumberValidator classUnderTest;
+	
+	public PrimeNumberValidatorTest() {
+		classUnderTest = new PrimeNumberValidator();
+	}
+	
+	public static void main(String[] args) {
+		PrimeNumberValidatorTest test = new PrimeNumberValidatorTest();
+		test.testNegativeNotPrime();
+		test.test2Prime();
+		test.test3Prime();
+		test.test4NotPrime();
+		System.out.println("All tests passed");
+	}
+	
+
 	void testNegativeNotPrime() {
-		PrimeNumberValidator classUnderTest = new PrimeNumberValidator();
-		assertFalse(classUnderTest.isPrime(-1));
+		if(classUnderTest.isPrime(-1)) {
+			throw new RuntimeException("testNegativeNotPrime failed");
+		};
 	}
 	
-	@Test
+
 	void test1NotPrime() {
-		PrimeNumberValidator classUnderTest = new PrimeNumberValidator();
-		assertFalse(classUnderTest.isPrime(1));
+		if(classUnderTest.isPrime(1)) {
+			throw new RuntimeException("test1NotPrime failed");
+		}
 	}
 
-	@Test
 	void test2Prime() {
-		PrimeNumberValidator classUnderTest = new PrimeNumberValidator();
-		assertTrue(classUnderTest.isPrime(2));
+		if(!classUnderTest.isPrime(2)) {
+			throw new RuntimeException("test2Prime failed");
+		}
 	}
 	
-	@Test
 	void test3Prime() {
-		PrimeNumberValidator classUnderTest = new PrimeNumberValidator();
-		assertTrue(classUnderTest.isPrime(3));
+		if(!classUnderTest.isPrime(3)) {
+			throw new RuntimeException("test3Prime failed");
+		}
 	}
 	
-	@Test
 	void test4NotPrime() {
-		PrimeNumberValidator classUnderTest = new PrimeNumberValidator();
-		assertFalse(classUnderTest.isPrime(4));
+		if(classUnderTest.isPrime(4)) {
+			throw new RuntimeException("test4NotPrime failed");
+		}
 	}
 
 }
